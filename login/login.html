@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UBT Login</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="login-container">
+
+    <img src="C:\PFPU\PP\499test\ubt-1.png" alt="University Logo">
+    <h2>Login</h2>
+    <form action="login_process.php" method="post">
+      <label for="Student ID">Student ID</label>
+      <input type="Student ID" id="Student ID" name="Student ID" placeholder="SSN/Student ID" required>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+      <div class="remember-me">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember" style="margin: 0;">Remember Me</label>
+      </div>
+      
+      <button type="submit">Login</button>
+      
+    </form>
+  </div>
+</body>
+</html>

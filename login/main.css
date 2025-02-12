@@ -1,0 +1,84 @@
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-container {
+    width: 350px;
+    margin: 100px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-container img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 80px; /* Adjust as needed or replace with your logo dimensions */
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .login-container input[type="Student ID"],
+  .login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .login-container .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .login-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #004080; /* University-themed blue */
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background: #003060;
+  }
+  
+  .login-container .forgot-password {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .login-container .forgot-password a {
+    color: #004080;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .login-container .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
