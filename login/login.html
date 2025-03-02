@@ -1,49 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
-    <title>Course Scheduling System</title> <!-- Title of the webpage -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file for styling -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UBT Login</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <header>
-        <h1>Course Scheduling System</h1> <!-- Main title of the webpage -->
-    </header>
-    <main>
-        <h2>Available Courses</h2> <!-- Subtitle for the courses section -->
-        <div id="course-list"> <!-- Container for the list of courses -->
-            <!-- Each course is represented by a div with class "course" -->
-            <div class="course">
-                <h3>Course 1: Introduction to Programming</h3> <!-- Course title -->
-                <p>Credits: 3</p> <!-- Course credits -->
-                <button onclick="enroll('Introduction to Programming')">Enroll</button> <!-- Button to enroll in the course -->
-            </div>
-            <div class="course">
-                <h3>Course 2: Data Structures</h3>
-                <p>Credits: 4</p>
-                <button onclick="enroll('Data Structures')">Enroll</button>
-            </div>
-            <div class="course">
-                <h3>Course 3: Web Development</h3>
-                <p>Credits: 3</p>
-                <button onclick="enroll('Web Development')">Enroll</button>
-            </div>
-            <div class="course">
-                <h3>Course 4: Database Management</h3>
-                <p>Credits: 3</p>
-                <button onclick="enroll('Database Management')">Enroll</button>
-            </div>
-            <div class="course">
-                <h3>Course 5: Software Engineering</h3>
-                <p>Credits: 4</p>
-                <button onclick="enroll('Software Engineering')">Enroll</button>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2023 Course Scheduling System</p> <!-- Footer with copyright notice -->
-    </footer>
-    <script src="script.js"></script> <!-- Link to the JavaScript file for functionality -->
+  <div class="login-container">
+
+    <img src="C:\PFPU\PP\499test\ubt-1.png" alt="University Logo">
+    <h2>Login</h2>
+    <form action="login_process.php" method="post">
+      <label for="Student ID">Student ID</label>
+      <input type="Student ID" id="Student ID" name="Student ID" placeholder="SSN/Student ID" required>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+      <div class="remember-me">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember" style="margin: 0;">Remember Me</label>
+      </div>
+      
+      <button type="submit">Login</button>
+      
+    </form>
+  </div>
 </body>
 </html>
