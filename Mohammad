@@ -20,3 +20,38 @@
 </body>
 </html>
 #####################################################################################
+ <link rel="stylesheet" href="../styles.css"> <!-- Adjust path if needed -->
+</head>
+<body>
+    <h1>Course Registration</h1>
+    <h2>Select Courses to Add</h2>
+    <div id="course-list">
+        <div class="course">
+            <span>Course 1: Introduction to Programming</span>
+            <button class="add-button" onclick="addCourse('Course 1')">Add</button>
+        </div>
+        <div class="course">
+            <span>Course 2: Data Structures</span>
+            <button class="add-button" onclick="addCourse('Course 2')">Add</button>
+        </div>
+        <div class="course">
+            <span>Course 3: Web Development</span>
+            <button class="add-button" onclick="addCourse('Course 3')">Add</button>
+        </div>
+        <div class="course">
+            <span>Course 4: Database Management</span>
+            <button class="add-button" disabled>Closed</button>
+        </div>
+        <div class="course">
+            <span>Course 5: Software Engineering</span>
+            <button class="add-button" disabled>Closed</button>
+        </div>
+    </div>
+    <button id="queue-button" onclick="addToQueue()">Add to Queue</button>
+    <div id="selected-courses">
+        <h3>Selected Courses:</h3>
+        <ul id="course-list-display"></ul>
+    </div>
+    <script src="../script.js"></script> <!-- Ensure this path is correct -->
+</body>
+</html>
