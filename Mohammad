@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Adjust path if needed -->
+</head>
+<body>
+    <h1>Welcome to the Student Portal</h1>
+    <nav>
+        <ul>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <h2>Select an option from the menu</h2>
+</body>
+</html>
+#####################################################################################
