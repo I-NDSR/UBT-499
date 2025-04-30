@@ -13,18 +13,17 @@ if (isset($_POST['courses'])) {
     $selected_courses = $_POST['courses'];
     
     // Prepare to insert each selected course into the registrations table
+    $stmt = $conn->prepare("INSERT INTO schedules (user_id, course_name) VALUES (?, ?)");
     foreach ($selected_courses as $course) {
-        // Prepare the SQL statement
-        $sql = "INSERT INTO schedules (user_id, course_name) VALUES ('" . mysqli_real_escape_string($conn, $_SESSION['user_id']) . "', '" . mysqli_real_escape_string($conn, $course) . "')";
-        
-        // Execute the query
-        if (mysqli_query($conn, $sql)) {
+        $stmt->bind_param("is", $_SESSION['user_id'], $course);
+        if ($stmt->execute()) {
             echo "You have successfully registered for the course: " . htmlspecialchars($course) . "<br>";
         } else {
             // Output error message if the query fails
-            echo "Error: " . mysqli_error($conn) . "<br>";
+            echo "Error: " . $stmt->error . "<br>";
         }
     }
+    $stmt->close();
 } else {
     echo "No courses selected.";
 }

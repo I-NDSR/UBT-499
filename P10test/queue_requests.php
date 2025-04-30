@@ -30,7 +30,7 @@ $courses = mysqli_query($conn, "SELECT * FROM courses");
         <?php while ($course = mysqli_fetch_assoc($courses)): ?>
             <div>
                 <input type="checkbox" name="courses[]" value="<?php echo $course['id']; ?>">
-                <label><?php echo $course['course_name']; ?></label>
+                <label><?php echo htmlspecialchars($course['course_name']); ?></label>
             </div>
         <?php endwhile; ?>
         <button type="submit">Submit Queue Request</button>
